@@ -142,23 +142,58 @@ https://github.com/N.manga/ASSIGNMNT/main.tex
 \end{lstlisting}
 %
 \section{Question No.2.14}
-item Construct $\triangle PQR$ such that
-$PQ$=3,$QR$=5.5 and $\angle PQR=60{\degree}$  
-\section{SOLUTION:}
-let the vertices of $\triangle PQR$ and be
-\begin{align}
-\vec{P} = \myvec{0\\3}, \vec{Q} = \myvec{0\\0}, \vec{R} = \myvec{5.5\\0}
+\item In $\triangle PQR$ ,$PQ=3$,\angleQ=60^{\degree}$ and $QR=5.5$
+Sketch $\triangl PQR$
+
+\section{SOLUTION}
+
+The vertex $\vec{P}$ can be expressed in {\em polar coordinate form} as
+%\begin{prob:tri_polar}
+\begin{aline}
+\vec{P} = c\myvec{\cos \theta\\ \sin \theta}, \vec{Q} = \myvec{0\\0}, \vec{R} = \myvec{P\\0}
 \end{align}
+
+From $\triangle PQR$,we use the law of cosines:
+\begin{align}
+b^2=a^2+c^2-2ac\cosQ
 \\
-Now, $\triangle PQR$can be plotted using vertices $PQ$ ,$QR$ and $RP$ .
+c^2-b^2+a^2-2ac \cosQ &=0
 \\
-Plot the  $\triangle PQR$ :
+(c+b)(c-b)+8^2-2(8)\brak{\frac{1}{\sqrt{2}}}c &=0 \quad \brak{\because \ angle Q=60^{\degree}}
+\\
+\frac{7}{2}(c+b)+64-8\sqrt{2}c &=0 \quad \brak{\because QR=5.5}
+\\
+\implies(7-16\sqrt{2})c+7b &=-128
+\end{aline}
+And we have,
+\begin{align} 
+\implies QR=5.5
+\\
+QR=\frac{7}{2}
+\end{align}
+
+which can be expressed as the matrix equation
+\begin{align}
+\myvec{7-16\sqrt{2} & 7\\1 & -1}\myvec{c\\b} =\myvec{-128\\ \frac{7}{2}}
+\end{align}
+
+therefore,
+\begin{}
+\myvec{c\\b}=\myvec{11.99\\8.49}
+\end{align}
+ 
+ so,the vertices of $\triangle PQR$ are
+\begin{align}
+\vec{P}=11.99\myvec{\cos60\\\sin60}=\myvec{5.9\sqrt{2}\\5.9\sqrt{2}}, \vec{Q}=\myvec{0\\0},\vec{R}=\myvec{8\\0}
+
+
+Plot of the $\triangle PQR$:
 \numberwithin{figure}{section}
 \begin{figure}[ht]
     \centering
     \includegraphics[width=\columnwidth]{download (4).png})
     \caption{$\triangle PQR$}
-    \label{fig:$\triangle PQR$}
+    \label{fig:$\triangle LMN$}
 \end{figure}
 \end{document}
 
